@@ -40,8 +40,9 @@
   --transition-timing: 0.3s;
 }
 html {
-  font-size: 62.5%;
+  font-size: 16px; /* Now 1rem will be equal to 16px */
 }
+
 /* START CSS RESET */
 * {
   margin: 0;
@@ -71,18 +72,49 @@ ul {
   list-style: none;
 }
 /* END CSS RESET*/
-div {
-  display: grid;
-}
-.container {
-  width: 1200px;
-  background-color: var(--blue);
-  display: grid;
-}
-.header {
-  display: grid;
-  background-color: red;
-}
+
 .body {
   font-size: 1.6rem;
+  font-family: var(--font-family-raleway);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+.header {
+  position: relative;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  top: 0;
+  z-index: -1;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
 }
