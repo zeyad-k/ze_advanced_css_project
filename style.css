@@ -38,6 +38,7 @@
   --font-size-22: 2.2rem;
   --font-size-20: 2rem;
   --font-size-18: 1.8rem;
+  --font-size-16: 1.6rem;
   --font-size-15: 1.5rem;
 
   --transition-timing: 0.3s;
@@ -81,7 +82,7 @@ html {
 /* END CSS RESET*/
 
 .body {
-  font-size: 1.6rem;
+  font-size: var(--font-size-16);
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
   color: var(--color-text);
@@ -91,6 +92,7 @@ html {
   max-width: var(--container-width);
 }
 .header {
+  font-size: var(--font-size-16);
   position: relative;
   padding: 3rem 0;
   display: flex;
