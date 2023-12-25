@@ -210,7 +210,7 @@ body {
   color: var(--color-red);
 }
 .bio__links {
-  font-size: 2.23rem;
+  font-size: 2.4rem;
   font-weight: var(--font-weight-semi-bold);
   text-decoration: none;
 }
@@ -239,9 +239,25 @@ body {
 }
 .bio__arrow {
   display: inline-block;
-  animation: jump 1s infinite alternate;
+  animation: jump 1s infinite ease-in-out alternate;
 }
 
 .bio__pic-content {
-  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-self: end;
+}
+.bio__pic-content::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-box-img);
+  width: 100%;
+  height: 48rem;
+  z-index: -1;
+  border-radius: 1.8rem;
+  box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);
+}
+.bio__pic {
+  width: 42.7rem;
 }
