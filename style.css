@@ -10,6 +10,7 @@
   --color-blue: #2374e1;
   --color-light-blue: #1d9bf0;
   --color-dark-blue: #0a66c2;
+  --color-telegram: #0088cc;
   --color-darker-blue: #143ce8;
   --color-red: #ff0000;
   --color-green: #03a696;
@@ -188,24 +189,42 @@ body {
   margin: 3rem 0 8rem;
 }
 .bio__name {
+  font-weight: var(--font-weight-semi-bold);
 }
 .bio__almdrasa {
+  color: var(--color-green);
 }
 .bio__facebook {
+  color: var(--color-blue);
 }
 .bio__twitter {
+  color: var(--color-light-blue);
 }
 .bio__telegram {
+  color: var(--color-telegram);
 }
 .bio__linkedin {
+  color: var(--color-dark-blue);
 }
 .bio__youtube {
+  color: var(--color-red);
+}
+.bio__links {
+  font-size: 2.23rem;
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
 }
 .say-hi-link {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 0.7rem 4.7rem;
 }
-.download-cv-link {
+.find-out-link {
+  padding: 0.7rem 0;
+  margin-inline-start: 1.4rem;
 }
 .bio__arrow {
+  /* display: inline-block; */
 }
 
 .bio__pic-content {
