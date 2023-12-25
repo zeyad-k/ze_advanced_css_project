@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+/*  CSS RESET */
 :root {
   --container-width: 119rem;
   --gutter: 2rem;
@@ -5,13 +8,13 @@
   --color-black: #000;
   --color-white: #fff;
   --color-blue: #2374e1;
-  --color-light-blue-: #1d9bf0;
-  --color-dark-blue-: #0a66c2;
-  --color-darker-blue-: #143ceb;
+  --color-light-blue: #1d9bf0;
+  --color-dark-blue: #0a66c2;
+  --color-darker-blue: #143ce8;
   --color-red: #ff0000;
   --color-green: #03a696;
+  --color-grey: #f6f6f6;
   --color-dark-green: #42959b;
-  --color-gray: #f6f6f6;
 
   --color-background: var(--color-white);
   --color-text: var(--color-black);
@@ -19,8 +22,8 @@
   --color-link-bg: var(--color-black);
   --color-input-border: var(--color-black);
 
-  --font-family-raleway: "Raleway", sans-serif;
   --font-family-poppins: "Poppins", sans-serif;
+  --font-family-raleway: "Raleway", sans-serif;
 
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -39,11 +42,7 @@
 
   --transition-timing: 0.3s;
 }
-html {
-  font-size: 62.5%; /* Now 1rem will be equal to 16px */
-}
 
-/* START CSS RESET */
 * {
   margin: 0;
   padding: 0;
@@ -65,12 +64,20 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  border: 0;
 }
 
-ol,
-ul {
+ul,
+ol {
   list-style: none;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+
 /* END CSS RESET*/
 
 .body {
