@@ -92,7 +92,7 @@ html {
   max-width: var(--container-width);
 }
 .header {
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-16); /* مهم*/
   position: relative;
   padding: 3rem 0;
   display: flex;
