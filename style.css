@@ -89,8 +89,11 @@ body {
   color: var(--color-text);
 }
 .container {
+  display: grid;
+  row-gap: 11rem;
   margin: 0 auto;
-  max-width: var(--container-width);
+  max-width: calc(var(--container-width) + calc(var(--gutter)));
+  padding-inline: var(--gutter);
 }
 .header {
   /* font-size: var(--font-size-16); */
