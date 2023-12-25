@@ -81,7 +81,7 @@ html {
 
 /* END CSS RESET*/
 
-.body {
+body {
   font-size: var(--font-size-16);
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -92,7 +92,8 @@ html {
   max-width: var(--container-width);
 }
 .header {
-  font-size: var(--font-size-16); /* مهم*/
+  /* font-size: var(--font-size-16); */
+  /*  مهم */
   position: relative;
   padding: 3rem 0;
   display: flex;
@@ -162,4 +163,51 @@ html {
 .toggle__checkbox:checked + .toggle__label::after {
   transform: translate(2.1rem);
   background-color: var(--color-green);
+}
+/* global section */
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
+}
+/* bio section */
+.bio {
+  gap: 7.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.bio__data {
+}
+.bio__heading {
+  font-size: var(--font-size-70);
+  font-weight: var(--font-weight-bold);
+}
+.bio__objective {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-20);
+  margin: 3rem 0 8rem;
+}
+.bio__name {
+}
+.bio__almdrasa {
+}
+.bio__facebook {
+}
+.bio__twitter {
+}
+.bio__telegram {
+}
+.bio__linkedin {
+}
+.bio__youtube {
+}
+.say-hi-link {
+}
+.download-cv-link {
+}
+.bio__arrow {
+}
+
+.bio__pic-content {
+  flex: 1;
 }
