@@ -138,6 +138,8 @@ body {
   padding: 3rem 0;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
 }
 .header::before {
   content: "";
@@ -147,6 +149,7 @@ body {
   border-bottom: 0.1rem solid var(--color-input-border);
   top: 0;
   z-index: -1;
+  background-color: #f6f6f6;
 }
 
 .navigation__list {
