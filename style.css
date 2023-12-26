@@ -130,15 +130,19 @@ body {
   font-size: var(--font-size-65);
   font-weight: var(--font-weight-bold);
 }
+.h3-heading {
+  font-size: var(--font-size-40);
+  font-weight: var(--font-weight-bold);
+}
 /*  End global-section */
-
+/* header section */
 .header {
   /*  مهم */
   position: relative;
   padding: 3rem 0;
   display: flex;
   justify-content: center;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
 .header::before {
@@ -208,6 +212,7 @@ body {
   background-color: var(--color-green);
 }
 /* End Toggle */
+/*  End header section */
 
 /* bio section */
 .bio {
@@ -337,3 +342,24 @@ body {
   max-width: 100%;
 }
 /*  End Media section */
+
+/*  Projects section */
+.projects__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 5rem;
+}
+.projects__item {
+  display: flex;
+  gap: 3rem;
+}
+.projects__image {
+  flex: 1;
+}
+.project__description {
+  margin: 3rem 0;
+}
+.projects__links {
+  color: var(--color-blue);
+}
+/* End Projects section */
