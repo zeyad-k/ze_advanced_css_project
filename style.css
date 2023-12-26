@@ -267,5 +267,33 @@ body {
 /* End Bio Section */
 
 /* Skills Section */
+.skills {
+  grid-template-columns: 1fr;
+  background-color: var(--color-grey);
+}
+.skill__header {
+  margin-block-end: 3rem;
+  grid-column: 1/-1;
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-bold);
+}
+.skills__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-semi-bold);
+}
+.skills__skill {
+  /* position: relative; */
+  display: block;
+}
+.skill__years {
+  /* position: absolute; */
+  display: block;
+  /* margin: 10px 0;
+  margin: 10px 0; */
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-regular);
+}
 
 /* End Skills Section */
