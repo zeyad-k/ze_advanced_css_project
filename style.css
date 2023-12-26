@@ -95,6 +95,15 @@ body {
   max-width: calc(var(--container-width) + calc(var(--gutter)));
   padding-inline: var(--gutter);
 }
+.video-loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.08;
+}
 /* global section */
 .section {
   position: relative;
@@ -122,8 +131,8 @@ body {
   font-weight: var(--font-weight-bold);
 }
 /*  End global-section */
+
 .header {
-  /* font-size: var(--font-size-16); */
   /*  مهم */
   position: relative;
   padding: 3rem 0;
@@ -154,7 +163,7 @@ body {
   text-decoration: underline;
   color: var(--color-text);
 }
-/* End Toggle */
+/* Toggle */
 .toggle {
   display: flex;
   gap: 1rem;
@@ -195,6 +204,7 @@ body {
   transform: translate(2.1rem);
   background-color: var(--color-green);
 }
+/* End Toggle */
 
 /* bio section */
 .bio {
@@ -318,3 +328,9 @@ body {
 }
 
 /* End Skills Section */
+
+/*  Media section */
+.media__video {
+  max-width: 100%;
+}
+/*  End Media section */
