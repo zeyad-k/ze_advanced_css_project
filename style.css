@@ -179,8 +179,7 @@ body {
   gap: 7.4rem;
   grid-template-columns: repeat(2, 1fr);
 }
-.bio__data {
-}
+
 .bio__heading {
   font-size: var(--font-size-70);
   font-weight: var(--font-weight-bold);
@@ -263,4 +262,10 @@ body {
 }
 .bio__pic {
   width: 42.7rem;
+  border-radius: 1.8rem;
 }
+/* End Bio Section */
+
+/* Skills Section */
+
+/* End Skills Section */
