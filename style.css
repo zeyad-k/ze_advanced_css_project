@@ -403,5 +403,27 @@ body {
 /*  End Clients Section */
 
 /* Contacts section */
+.contact {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20rem;
+  align-items: center;
+}
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contact__email {
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+.contact__social-link {
+  transition: var(--transition-timing);
+}
+.contact__social-link:hover {
+  transform: scale(1.2);
+}
 
+.contacts__content {
+  /* align-self: center; */
+}
 /* End Contacts section */
