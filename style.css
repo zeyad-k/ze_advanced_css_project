@@ -380,3 +380,8 @@ body {
   margin-inline-start: 0.6rem;
 }
 /* End Projects section */
+/*  Clients Section */
+.clients__opinions {
+  column-gap: 1/-1;
+}
+/*  End Clients Section */
