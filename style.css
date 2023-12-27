@@ -129,11 +129,13 @@ body {
   grid-column: 1/-1;
   font-size: var(--font-size-65);
   font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
 }
 .h3-heading {
   margin-block-end: 2.5rem;
   font-size: var(--font-size-38);
   font-weight: var(--font-weight-bold);
+  text-transform: capitalize;
 }
 /*  End global-section */
 /* header section */
@@ -399,3 +401,7 @@ body {
   scroll-snap-align: start;
 }
 /*  End Clients Section */
+
+/* Contacts section */
+
+/* End Contacts section */
