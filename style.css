@@ -424,7 +424,29 @@ body,
   transform: scale(1.2);
 }
 
-.contacts__content {
-  /* align-self: center; */
+.contact__inputs {
+  display: flex;
+  gap: 3rem;
 }
+.contact__input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  flex: 1;
+}
+.contact__textarea {
+  width: 100%;
+  margin-block-start: 4rem;
+}
+.contact__button {
+  border: 0;
+  margin-block-start: 3.4rem;
+  padding: 1.7rem 1.8rem;
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-24);
+}
+
 /* End Contacts section */
