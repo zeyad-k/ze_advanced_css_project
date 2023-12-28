@@ -270,27 +270,20 @@
           </div>
         </div>
 
-        <div class="contacts__form">
-          <h3 class="h2-heading">
-            LET’S WORK <br />
-            TOGETHER!
-          </h3>
-          <form class="contacts__form-elements" action="" method="post">
-            <input type="text" class="contacts__name" placeholder="Full Name" />
-            <input
-              type="number"
-              class="contacts__number"
-              placeholder="Phone No."
-            />
+        <div class="contact__formContent">
+          <h2 class="h2-heading">LET’S WORK <br />TOGETHER!</h2>
+          <form action="result.html" method="post">
+            <div class="contact__inputs">
+              <input class="contact__input" type="text" />
+              <input class="contact__input" type="tel" />
+            </div>
             <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              class="contacts__message"
-              placeholder="Your Message"
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
             ></textarea>
-            <input type="submit" value="Send Message" />
+            <input class="contact__input" type="submit" />
           </form>
         </div>
       </section>
