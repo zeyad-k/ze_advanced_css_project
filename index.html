@@ -272,14 +272,23 @@
 
         <div class="contact__formContent">
           <h2 class="h2-heading">LET’S WORK <br />TOGETHER!</h2>
-          <form action="result.html" method="post">
+          <form action="results.html" method="get">
             <div class="contact__inputs">
               <input
                 class="contact__input"
                 type="text"
                 placeholder="Full Name"
+                name="Name"
+                required
               />
-              <input class="contact__input" type="tel" placeholder="Phone No" />
+              <input
+                class="contact__input contact__input-small"
+                type="tel"
+                placeholder="Phone No. Ex:123-456-7890"
+                name="Phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
             </div>
             <textarea
               class="contact__input contact__textarea"
@@ -287,8 +296,14 @@
               id="description"
               rows="1"
               placeholder="Your Message"
+              required
             ></textarea>
-            <input class="contact__button" type="submit" value="Send Message" />
+            <input
+              class="contact__button"
+              type="submit"
+              value="Send Message"
+              required
+            />
           </form>
         </div>
       </section>

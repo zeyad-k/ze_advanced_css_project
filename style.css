@@ -81,7 +81,7 @@ html {
 }
 
 body,
-[type="button"] {
+[type="submit"] {
   font-size: var(--font-size-16);
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -435,6 +435,7 @@ body,
   border-bottom: 0.1rem solid var(--color-input-border);
   flex: 1;
 }
+
 .contact__textarea {
   width: 100%;
   margin-block-start: 4rem;
@@ -447,6 +448,11 @@ body,
   color: var(--color-white);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-24);
+}
+form:invalid::after {
+  content: "*";
+  color: var(--color-red);
+  font-size: var(--font-size-38);
 }
 
 /* End Contacts section */
