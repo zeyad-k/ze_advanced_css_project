@@ -147,8 +147,9 @@ body,
   padding: 3rem 0;
   display: flex;
   justify-content: center;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
+  z-index: 1;
 }
 .header::before {
   content: "";
@@ -158,7 +159,7 @@ body,
   border-bottom: 0.1rem solid var(--color-input-border);
   top: 0;
   z-index: -1;
-  background-color: #f6f6f6;
+  background-color: var(--color-background);
 }
 
 .navigation__list {
@@ -180,7 +181,7 @@ body,
 .container:has(#media:target) .navigation__media,
 .container:has(#projects:target) .navigation__projects,
 .container:has(#clients:target) .navigation__clients,
-.container:has(#cotact:target) .navigation__contact {
+.container:has(#contact:target) .navigation__contact {
   color: var(--color-blue);
   font-weight: var(--font-weight-bold);
   text-decoration: underline;
