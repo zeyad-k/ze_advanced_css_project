@@ -80,8 +80,6 @@ html {
   scroll-padding-top: 11rem;
 }
 
-/* END CSS RESET*/
-
 body,
 [type="button"] {
   font-size: var(--font-size-16);
@@ -90,6 +88,7 @@ body,
   color: var(--color-text);
   border: 0;
 }
+/* END CSS RESET*/
 .container {
   display: grid;
   row-gap: 11rem;
