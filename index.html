@@ -19,11 +19,20 @@
 
   <body>
     <div class="container">
+      <!--  Background video -->
       <video class="video-loop" autoplay loop>
         <source src="./video-loop.mp4" />
       </video>
 
       <header class="header">
+        <!-- Burger menu -->
+        <label class="burger-menu__label" for="menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input type="checkbox" class="burger-menu__checkbox" id="menu" />
+
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
