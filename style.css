@@ -165,6 +165,10 @@ body,
 .burger-menu__checkbox {
   display: none;
 }
+/* end burger menu */
+.navigation {
+  transition: var(--transition-timing);
+}
 .navigation__list {
   display: flex;
   gap: 2rem;
@@ -533,6 +537,31 @@ html:has(.toggle__checkbox:checked) {
 @media (max-width: 500px) {
   .bio__pic {
     width: 100%;
+  }
+  .navigation {
+    display: none;
+  }
+  .burger-menu__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .burger-menu__bar {
+    width: 4.375rem;
+    height: 0.3rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(-45deg);
+  }
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-1.5rem) rotate(45deg);
   }
 }
 /* End Responsive */
