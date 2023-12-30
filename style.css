@@ -539,9 +539,7 @@ html:has(.toggle__checkbox:checked) {
   .bio__pic {
     width: 100%;
   }
-  .navigation {
-    display: none;
-  }
+
   .burger-menu__label {
     display: flex;
     flex-direction: column;
@@ -567,16 +565,12 @@ html:has(.toggle__checkbox:checked) {
   }
   .navigation {
     position: absolute;
-    display: flex;
+    width: 100vw;
     background-color: var(--color-background);
     border-bottom: 0.1rem solid var(--color-text);
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     top: 0;
     z-index: -1;
-    width: 98.8vw;
-  }
-  .navigation__list {
-    justify-content: center;
   }
   .header:has(.burger-menu__checkbox:checked) .navigation {
     top: 100%;
