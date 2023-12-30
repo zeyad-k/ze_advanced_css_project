@@ -95,7 +95,7 @@ body,
   row-gap: 11rem;
   margin: 0 auto;
   max-width: calc(var(--container-width) + calc(var(--gutter)));
-  padding-inline: var(--gutter);
+  padding-inline: 0 var(--gutter);
 }
 .video-loop {
   position: fixed;
