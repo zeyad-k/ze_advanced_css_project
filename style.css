@@ -95,7 +95,7 @@ body,
   row-gap: 11rem;
   margin: 0 auto;
   max-width: calc(var(--container-width) + calc(var(--gutter)));
-  padding-inline: 0 var(--gutter);
+  padding-inline: var(--gutter);
 }
 .video-loop {
   position: fixed;
@@ -202,7 +202,6 @@ body,
 .toggle__title {
   font-size: var(--font-size-18);
   font-weight: var(--font-weight-medium);
-  z-index: 0;
 }
 .toggle__checkbox {
   display: none;
@@ -539,12 +538,14 @@ html:has(.toggle__checkbox:checked) {
   .bio__pic {
     width: 100%;
   }
-
+  .toggle {
+    z-index: 1;
+  }
   .burger-menu__label {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    z-index: 0;
+    z-index: 1;
   }
   .burger-menu__bar {
     width: 4.375rem;
@@ -565,12 +566,16 @@ html:has(.toggle__checkbox:checked) {
   }
   .navigation {
     position: absolute;
-    width: 100vw;
+
     background-color: var(--color-background);
     border-bottom: 0.1rem solid var(--color-text);
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     top: 0;
     z-index: -1;
+    width: 98.8vw;
+  }
+  .navigation__list {
+    justify-content: center;
   }
   .header:has(.burger-menu__checkbox:checked) .navigation {
     top: 100%;
