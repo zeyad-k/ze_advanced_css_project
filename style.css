@@ -575,7 +575,6 @@ html:has(.toggle__checkbox:checked) {
   .header:has(.burger-menu__checkbox:checked) .navigation {
     top: 100%;
   }
-  .
 
   /* .header::before {
     width: 200vw;
